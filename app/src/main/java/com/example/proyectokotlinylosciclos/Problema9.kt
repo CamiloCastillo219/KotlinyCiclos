@@ -11,6 +11,19 @@ fun main() {
 
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema9() {
-    // Desarrolle aquí la lógica
-
+    println("n:")
+    val n = readln().toInt()
+    if (n < 1) {
+        println("Error")
+    } else {
+        var sumaFactoriales = 0
+        for (i in 1..n) {
+            var factorial = 1
+            for (j in 1..i) {
+                factorial *= j
+            }
+            sumaFactoriales += factorial
+        }
+        println("s = $sumaFactoriales")
+    }
 }

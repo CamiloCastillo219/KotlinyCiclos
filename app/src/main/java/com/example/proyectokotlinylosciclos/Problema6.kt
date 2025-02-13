@@ -11,6 +11,19 @@ fun main() {
 
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema6() {
-    // Desarrolle aquí la lógica
-
+    println("A:")
+    val a = readln().toInt()
+    println("B:")
+    val b = readln().toInt()
+    if (a < b) {
+        for (i in a..b) {
+            print(i)
+            print(" ")
+        }
+    } else {
+        for (i in a downTo b) {
+            print(i)
+            print(" ")
+        }
+    }
 }

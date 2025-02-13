@@ -11,6 +11,16 @@ fun main() {
 
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema5() {
-    // Desarrolle aquí la lógica
-
+    var contadorPares = 0
+    while (true) {
+        println("n:")
+        val numero = readln().toInt()
+        if (numero == -1) {
+            break
+        }
+        if (numero % 2 == 0) {
+            contadorPares++
+        }
+    }
+    println("Pares = $contadorPares")
 }

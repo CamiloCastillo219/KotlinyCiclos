@@ -11,6 +11,15 @@ fun main() {
 
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema7() {
-    // Desarrolle aquí la lógica
-
+    println("N:")
+    val n = readln().toInt()
+    if (n <= 0) {
+        println("Error")
+    } else {
+        var suma = 0
+        for (i in 1..n) {
+            suma += i * i * i
+        }
+        println("s = $suma")
+    }
 }

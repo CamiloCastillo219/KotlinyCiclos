@@ -11,6 +11,12 @@ fun main() {
 
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema1() {
-    // Desarrolle aquí la lógica
-
+    println("Ingresa N:")
+    val num = readln().toInt()
+    var i = 1
+    while (i * i <= num) {
+        print(i * i)
+        print(" ")
+        i++
+    }
 }
